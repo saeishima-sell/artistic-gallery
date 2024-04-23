@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'FAMILY_NAME';
+  src: url(./assets/Lato/Lato-Regular.ttf) format('ttf');
+  src: url(./assets/Lato/Lato-Bold.ttf) format('ttf');
+  src: url(./assets/Lato/Lato-BoldItalic.ttf) format('ttf');
+ }
+
+body {
+  color: blue;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
