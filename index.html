@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,10 +7,138 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<h1>test</h1>
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quas animi. Recusandae accusamus laudantium quisquam ipsa pariatur
-			explicabo modi vel, illo velit obcaecati necessitatibus error placeat, ab deleniti provident sit!
-		</p>
+		<header class="header">
+			<div class="header__logo">
+				<span>Artistic Gallery</span>
+			</div>
+			<nav class="meta-menu">
+				<ul class="meta-menu__list">
+					<li class="meta-menu__item">
+						<a href="#"><span>Search icon</span></a>
+					</li>
+					<li class="meta-menu__item">
+						<ul class="language-list">
+							<li class="language-list__item">
+								<span
+									><abbr title="Deutsch"><span>De</span><span class="sr-only">Deutch</span></abbr></span
+								>
+							</li>
+							<li class="language-list__item">
+								<a href="#"
+									><span
+										><abbr title="Englisch"><span>En</span><span class="sr-only">Englisch</span></abbr></span
+									></a
+								>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<nav class="main-nav">
+				<ul class="main-nav__list">
+					<li class="main-nav__item"><a href="#">Besuch</a></li>
+					<li class="main-nav__item"><a href="#">Ausstellung</a></li>
+					<li class="main-nav__item"><a href="#">Sammlung</a></li>
+					<li class="main-nav__item"><a href="#">Künstler</a></li>
+					<li class="main-nav__item"><a href="#">News</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main-content">
+			<section class="teaser-hero">
+				<div class="teaser-hero__text">
+					<span><time datetime="2018-07-27 18:00">27.Juli, 18-21 Uhr</time></span>
+					<h1 class="teaser-hero__heading">Field Works &hyphen; Arts &amp; Ethics Research Group</h1>
+					<p class="teaser-hero__description">
+						Berlin Blue art präsentiert „FIELD WORKS“, eine Ausstellung der AERG (Kunst- und Ethik- Forschungsgruppe der Universität
+						Edinburgh), die aktuelle ethische, rechtliche und soziale Fragen in der Medizin- und Wissenschaftsforschung untersucht. Die
+						Ausstellung vereint internationale Künstler/innen, Akademiker/innen und besteht aus Bild-, Video- und Tonkunst sowie Schriften
+						und interaktiven Werken, die herausfordern und informieren, sondieren und provozieren sollen.
+					</p>
+					<div class="teaser-hero__button">
+						<a href="#" class="button"><span>Mehr erfahren</span></a>
+					</div>
+				</div>
+			</section>
+			<section class="teaser-visit">
+				<h2 class="teaser-visit__heading">Besuch</h2>
+				<div class="teaser-visit__info">
+					<h3 class="teaser-visit__today">Heute geöffnet <time datetime="12:00">12:00 &hyphen; 18:00 Uhr</time></h3>
+					<div class="teaer-visit__adress">
+						<h4>Adresse</h4>
+						<p>
+							Artistic Gallery Berlin <br />
+							Lange Straße 68 <br />
+							10243 Berlin
+						</p>
+					</div>
+					<div class="teaer-visit__contact">
+						<h4>Kontakt</h4>
+						<p>
+							<a href="mailto:hello@artisticgallery.de">hello@artisticgallery.de</a> <br />
+							+49 30 263 593 28
+						</p>
+					</div>
+				</div>
+				<div class="teaser-visit__button">
+					<a href="#" class="button"><span>zu Besuch</span></a>
+				</div>
+			</section>
+			<section class="teaser-news">
+				<h2 class="teaser-news__heading">News</h2>
+				<div class="teaser-news__card">
+					<!-- first card -->
+					<div class="teaser-news__card-item">
+						<a href="#" class="teaser-news__link">
+							<picture class="teaser-news__picture">
+								<img src="./assets/img/News/Susanne_Piotter.jpg" alt="Susanne Piotter mit ihrem Werk" />
+							</picture>
+							<h3 class="teaser-news__title">Susanne Piotter Teil des Transformart Festival, Berlin</h3>
+							<p class="teaser-news__subtitle">
+								Öffnungszeiten: Do &hyphen; Sa: <time datetime="14:00"> 14 &hyphen; 22 Uhr</time>, So:
+								<time datetime="14:00">14 &hyphen; 19 Uhr</time>
+							</p>
+							<p class="teaser-news__text">
+								Skulpturen in der Halle 70 (ehemaliges Kraftwerk). Geöffnetes Atelier im Gebäude 83, 1. OG, 1. Atelier auf der rechten
+								Seite, dort zu sehen: Druckgrafiken
+							</p>
+						</a>
+					</div>
+					<!-- second card -->
+					<div class="teaser-news__card-item">
+						<a href="#" class="teaser-news__link">
+							<picture class="teaser-news__picture">
+								<img src="./assets/img/News/Silvia_Binda_Heiserova.jpg" alt="Silvia Binda mit ihrem Werk" />
+							</picture>
+							<h3 class="teaser-news__title">Silvia Binda Heiserova in Valencia, Spanien</h3>
+							<p class="teaser-news__subtitle">Eröffnung: <time datetime="2018-06-26 20:00">26. Juni, 20 Uhr</time></p>
+							<p class="teaser-news__text">
+								Die Gruppenausstellung konzentriert sich auf digitale Kunst und neue Medienkunst, wo sowohl zeitgenössische, als auch
+								künstlerische Praxis mit Technologie kombiniert wird. Videokunst, Klangkunst, interaktive Kunst, Installationen und
+								interdisziplinäre Kunst in unterschiedlichsten Formaten.
+							</p>
+						</a>
+					</div>
+					<!-- third card -->
+					<div class="teaser-news__card-item">
+						<a href="#" class="teaser-news__link">
+							<picture class="teaser-news__picture">
+								<img src="./assets/img/News/Renata_Kudlacek.jpg" alt="Renata Kudlacek mit ihrem Werk" />
+							</picture>
+							<h3 class="teaser-news__title">Renata Kudlacek nominiert für Ashurst Artist Prize</h3>
+							<!-- No subtitle in this card -->
+							<p class="teaser-news__text">
+								Renata Kudlacek, Mitbegründerin und Künstlerin von BERLIN BLUE, wurde für den Ashurst Emerging Artist Prize nominiert.
+								Die Werke der Shortlist 2018 werden vom 9. April bis 1. Juli 2018 in der Ashurst Emerging Artist Gallery in London
+								ausgestellt.
+							</p>
+						</a>
+					</div>
+				</div>
+				<div class="teaser-news__button">
+					<a href="#" class="button"><span>Alle News</span></a>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>
