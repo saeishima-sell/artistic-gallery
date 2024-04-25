@@ -8,32 +8,34 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="header__logo">
-				<span>Artistic Gallery</span>
+			<div class="header__top">
+				<div class="header__logo">
+					<span>Artistic Gallery</span>
+				</div>
+				<nav class="meta-menu">
+					<ul class="meta-menu__list">
+						<li class="meta-menu__item">
+							<a href="#"><span>Search icon</span></a>
+						</li>
+						<li class="meta-menu__item">
+							<ul class="language-list">
+								<li class="language-list__item">
+									<span
+										><abbr title="Deutsch"><span>De</span><span class="sr-only">Deutch</span></abbr></span
+									>
+								</li>
+								<li class="language-list__item">
+									<a href="#"
+										><span
+											><abbr title="Englisch"><span>En</span><span class="sr-only">Englisch</span></abbr></span
+										></a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
 			</div>
-			<nav class="meta-menu">
-				<ul class="meta-menu__list">
-					<li class="meta-menu__item">
-						<a href="#"><span>Search icon</span></a>
-					</li>
-					<li class="meta-menu__item">
-						<ul class="language-list">
-							<li class="language-list__item">
-								<span
-									><abbr title="Deutsch"><span>De</span><span class="sr-only">Deutch</span></abbr></span
-								>
-							</li>
-							<li class="language-list__item">
-								<a href="#"
-									><span
-										><abbr title="Englisch"><span>En</span><span class="sr-only">Englisch</span></abbr></span
-									></a
-								>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
 			<nav class="main-nav">
 				<ul class="main-nav__list">
 					<li class="main-nav__item"><a href="#">Besuch</a></li>
@@ -46,7 +48,7 @@
 		</header>
 		<main class="main-content">
 			<section class="teaser-hero">
-				<div class="teaser-hero__text">
+				<div class="teaser-hero__context">
 					<span><time datetime="2018-07-27 18:00">27.Juli, 18-21 Uhr</time></span>
 					<h1 class="teaser-hero__heading">Field Works &hyphen; Arts &amp; Ethics Research Group</h1>
 					<p class="teaser-hero__description">
@@ -59,25 +61,28 @@
 						<a href="#" class="button"><span>Mehr erfahren</span></a>
 					</div>
 				</div>
+				<picture class="teaser-hero__picture">
+					<img src="./assets/img/Ausstellungen/ausstellung_field-works.jpg" alt="Ausstellung Field Works" />
+				</picture>
 			</section>
 			<section class="teaser-visit">
 				<h2 class="teaser-visit__heading">Besuch</h2>
 				<div class="teaser-visit__info">
-					<h3 class="teaser-visit__today">Heute geöffnet <time datetime="12:00">12:00 &hyphen; 18:00 Uhr</time></h3>
+					<span class="teaser-visit__today">Heute geöffnet <time datetime="12:00">12:00 &hyphen; 18:00 Uhr</time></span>
 					<div class="teaer-visit__adress">
-						<h4>Adresse</h4>
-						<p>
+						<h3>Adresse</h3>
+						<address>
 							Artistic Gallery Berlin <br />
 							Lange Straße 68 <br />
 							10243 Berlin
-						</p>
+						</address>
 					</div>
 					<div class="teaer-visit__contact">
-						<h4>Kontakt</h4>
-						<p>
+						<h3>Kontakt</h3>
+						<span>
 							<a href="mailto:hello@artisticgallery.de">hello@artisticgallery.de</a> <br />
-							+49 30 263 593 28
-						</p>
+							<a href="tel:+49 30 263 593 28">+49 30 263 593 28</a>
+						</span>
 					</div>
 				</div>
 				<div class="teaser-visit__button">
@@ -86,9 +91,9 @@
 			</section>
 			<section class="teaser-news">
 				<h2 class="teaser-news__heading">News</h2>
-				<div class="teaser-news__card">
+				<ul class="teaser-news__card">
 					<!-- first card -->
-					<div class="teaser-news__card-item">
+					<li class="teaser-news__card-item">
 						<a href="#" class="teaser-news__link">
 							<picture class="teaser-news__picture">
 								<img src="./assets/img/News/Susanne_Piotter.jpg" alt="Susanne Piotter mit ihrem Werk" />
@@ -103,9 +108,9 @@
 								Seite, dort zu sehen: Druckgrafiken
 							</p>
 						</a>
-					</div>
+					</li>
 					<!-- second card -->
-					<div class="teaser-news__card-item">
+					<li class="teaser-news__card-item">
 						<a href="#" class="teaser-news__link">
 							<picture class="teaser-news__picture">
 								<img src="./assets/img/News/Silvia_Binda_Heiserova.jpg" alt="Silvia Binda mit ihrem Werk" />
@@ -118,9 +123,9 @@
 								interdisziplinäre Kunst in unterschiedlichsten Formaten.
 							</p>
 						</a>
-					</div>
+					</li>
 					<!-- third card -->
-					<div class="teaser-news__card-item">
+					<li class="teaser-news__card-item">
 						<a href="#" class="teaser-news__link">
 							<picture class="teaser-news__picture">
 								<img src="./assets/img/News/Renata_Kudlacek.jpg" alt="Renata Kudlacek mit ihrem Werk" />
@@ -133,10 +138,54 @@
 								ausgestellt.
 							</p>
 						</a>
-					</div>
-				</div>
+					</li>
+				</ul>
 				<div class="teaser-news__button">
 					<a href="#" class="button"><span>Alle News</span></a>
+				</div>
+			</section>
+			<section class="teaser-exhibition">
+				<h2 class="teaser-exhibition__heading">Ausstellung</h2>
+				<ul class="teaser-exhibition__list">
+					<li class="teaser-exhibition__list-item">
+						<div class="teaser-exhibution__context">
+							<h3 class="teaser-exhibition__title"><a href="#">Field Works &hyphen; Arts &amp; Ethics Research Group</a></h3>
+							<span>Ausstellungsdauer: <time datetime="2018-07-28"> 28.07. &hyphen; 18.08.2018</time></span>
+						</div>
+						<picture class="teaser-exhibition__picture">
+							<img src="./assets/img/Ausstellungen/ausstellung_field-works.jpg" alt="Ausstellung Field Works" />
+						</picture>
+					</li>
+					<li class="teaser-exhibition__list-item">
+						<div class="teaser-exhibution__context">
+							<h3 class="teaser-exhibition__title"><a href="#">Outlands | Gallery Weekend Berlin</a></h3>
+							<span>Ausstellungsdauer: <time datetime="2018-08-25">25.08. &hyphen; 22.09.2018</time></span>
+						</div>
+						<picture class="teaser-exhibition__picture">
+							<img src="./assets/img/Ausstellungen/ausstellung_outlands.jpg" alt="Ausstellung Field Works" />
+						</picture>
+					</li>
+					<li class="teaser-exhibition__list-item">
+						<div class="teaser-exhibution__context">
+							<h3 class="teaser-exhibition__title"><a href="#">The Body Is In The Eye</a></h3>
+							<span>Ausstellungsdauer: <time datetime="2018-03-11">03.11. &hyphen; 24.11.2018</time></span>
+						</div>
+						<picture class="teaser-exhibition__picture">
+							<img src="./assets/img/Ausstellungen/ausstellung_the-body-is-in-the-eye.jpg" alt="Ausstellung Field Works" />
+						</picture>
+					</li>
+					<li class="teaser-exhibition__list-item">
+						<div class="teaser-exhibution__context">
+							<h3 class="teaser-exhibition__title"><a href="#">Urban Hi(s)story &hyphen; Silvia Binda Heiserova</a></h3>
+							<span>Ausstellungsdauer: <time datetime="2018-09-01">01.09. &hyphen; 22.09.2018</time></span>
+						</div>
+						<picture class="teaser-exhibition__picture">
+							<img src="./assets/img/Ausstellungen/ausstellung_urban-hisstory.jpg" alt="Ausstellung Field Works" />
+						</picture>
+					</li>
+				</ul>
+				<div class="teaser-exhibition__button">
+					<a href="#" class="button"><span>Zu Ausstellung</span></a>
 				</div>
 			</section>
 		</main>
